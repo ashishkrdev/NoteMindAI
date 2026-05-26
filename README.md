@@ -7,7 +7,7 @@
 ## Live Product
 
 - Deployment: Pending Vercel authentication
-- Repository: Pending GitHub authentication
+- Repository: https://github.com/ashishkrdev/NoteMindAI
 
 ## Features
 
