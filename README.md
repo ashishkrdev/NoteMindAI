@@ -6,7 +6,7 @@
 
 ## Live Product
 
-- Deployment: Pending Vercel authentication
+- Deployment: https://ashishkrdev.github.io/NoteMindAI/
 - Repository: https://github.com/ashishkrdev/NoteMindAI
 
 ## Features
@@ -24,7 +24,7 @@
 ![Redux Toolkit](https://img.shields.io/badge/Redux_Toolkit-2.x-7f8f69?style=for-the-badge&logo=redux)
 ![Vite](https://img.shields.io/badge/Vite-6.x-315f72?style=for-the-badge&logo=vite)
 ![React Router](https://img.shields.io/badge/React_Router-7.x-7f8f69?style=for-the-badge&logo=reactrouter)
-![Vercel](https://img.shields.io/badge/Vercel-ready-1f2937?style=for-the-badge&logo=vercel)
+![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-deployed-1f2937?style=for-the-badge&logo=github)
 
 ## Screenshots
 
@@ -96,17 +96,16 @@ src/
 
 ## Deployment
 
-The project includes `vercel.json` so client-side routes resolve correctly on Vercel.
+The project is configured for GitHub Pages through GitHub Actions.
 
 ```bash
 npm run build
-vercel --prod
 ```
 
 Deployment URL:
 
 ```text
-Pending Vercel authentication
+https://ashishkrdev.github.io/NoteMindAI/
 ```
 
 ## Roadmap
