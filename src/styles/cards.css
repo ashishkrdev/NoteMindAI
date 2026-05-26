@@ -1,0 +1,150 @@
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.stat,
+.note-card,
+.chat-box {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+}
+
+.stat {
+  padding: 16px;
+}
+
+.stat small {
+  display: block;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.stat strong {
+  font-size: 1.4rem;
+}
+
+.note-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.note-card {
+  padding: 16px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--highlight);
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.82rem;
+  margin-bottom: 10px;
+}
+
+.note-card h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.note-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.chat-box {
+  padding: 16px;
+}
+
+.chat-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.chat-head span:last-child {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.bubble {
+  max-width: 88%;
+  padding: 12px 14px;
+  border-radius: 16px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.bubble.user {
+  background: var(--highlight);
+  color: var(--text);
+}
+
+.bubble.ai {
+  background: #eef2f6;
+  color: var(--text);
+  margin-left: auto;
+}
+
+.features {
+  padding: 24px 0 84px;
+}
+
+.section-head {
+  max-width: 700px;
+  margin-bottom: 24px;
+}
+
+.section-head h2 {
+  margin: 0 0 10px;
+  font-size: 2rem;
+  letter-spacing: -0.03em;
+}
+
+.section-head p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.feature {
+  background: rgba(251, 251, 248, 0.86);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 22px;
+  box-shadow: var(--shadow);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.feature:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 34px rgba(31, 41, 55, 0.1);
+}
+
+.feature h3 {
+  margin: 0 0 8px;
+  font-size: 1.06rem;
+}
+
+.feature p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
