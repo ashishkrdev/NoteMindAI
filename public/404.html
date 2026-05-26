@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>NoteMindAI</title>
+    <script>
+      (function redirectToApp(location) {
+        var repoPathSegments = 1;
+        var pathSegments = location.pathname.split('/');
+        var basePath = pathSegments.slice(0, repoPathSegments + 1).join('/');
+        var routePath = pathSegments.slice(repoPathSegments + 1).join('/').replace(/&/g, '~and~');
+        var search = location.search ? '&' + location.search.slice(1).replace(/&/g, '~and~') : '';
+
+        location.replace(
+          location.protocol +
+            '//' +
+            location.hostname +
+            (location.port ? ':' + location.port : '') +
+            basePath +
+            '/?/' +
+            routePath +
+            search +
+            location.hash,
+        );
+      })(window.location);
+    </script>
+  </head>
+  <body></body>
+</html>
